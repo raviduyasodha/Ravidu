@@ -1,28 +1,28 @@
 {
     "version": 2,
-    "outputDirectory": "public",
+    "outputDirectory": "dist",
     "builds": [
         {
-            "src": "public/index.php",
+            "src": "dist/index.php",
             "use": "vercel-php@0.7.0"
         },
         {
-            "src": "public/**",
+            "src": "dist/**",
             "use": "@vercel/static"
         }
     ],
     "routes": [
         {
             "src": "/build/(.*)",
-            "dest": "public/build/$1"
+            "dest": "dist/build/$1"
         },
         {
             "src": "/(css|js|images|favicon.ico|robots.txt)(.*)",
-            "dest": "/public/$1$2"
+            "dest": "/dist/$1$2"
         },
         {
             "src": "/(.*)",
-            "dest": "public/index.php"
+            "dest": "dist/index.php"
         }
     ]
 }
