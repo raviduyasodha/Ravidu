@@ -205,14 +205,14 @@ export default function Welcome({ auth }) {
                 {/* About / Experience Section */}
                 <Section id="about" title="Philosophy & Approach">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
-                        <div className="relative flex justify-center lg:justify-end lg:order-2">
+                        <div className="relative flex justify-center lg:justify-end lg:order-1">
                             <ImageRevealer
                                 mainImage="/images/me.png"
                                 hoverImage="/images/robo.png"
                             />
                         </div>
 
-                        <div className="space-y-6 lg:order-1">
+                        <div className="space-y-6 lg:order-2">
                             <p className="text-xl text-slate-300 leading-relaxed italic">
                                 "I specialize in turning client ideas into real digital solutions while identifying real-world problems and solving them through technology."
                             </p>
@@ -246,9 +246,9 @@ export default function Welcome({ auth }) {
                             </h3>
                             <div className="grid md:grid-cols-3 gap-8">
                                 {[
-                                    { year: '2023 - Pres', role: 'Staff Engineer', company: 'Global Tech' },
-                                    { year: '2021 - 2023', role: 'Senior Developer', company: 'Innovative Solutions' },
-                                    { year: '2018 - 2021', role: 'Full Stack Dev', company: 'Creative Agency' }
+                                    { year: '2025 - Pres', role: 'Intern Full Stack Web Developer', company: 'WCL PVT LTD' },
+                                    { year: '2025 - 2025', role: 'Graphic designer & UI disigner', company: 'Tecxa PVT LTD' },
+                                    { year: '2024 - 2025', role: 'POS system Admin', company: 'Bandara & Sons PVT LTD' }
                                 ].map((exp) => (
                                     <div key={exp.year} className="flex flex-col gap-2 p-6 rounded-2xl border border-white/5 hover:border-indigo-500/30 transition-all group">
                                         <div className="text-xs font-mono text-indigo-400 uppercase tracking-tighter opacity-60 group-hover:opacity-100">{exp.year}</div>
