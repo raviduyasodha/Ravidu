@@ -1,7 +1,7 @@
 import { Head, Link } from '@inertiajs/react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import {
-    Code, Database, Cpu, Layout, Globe, Mail,
+    Code, Database, Cpu, Layout, Globe, Mail, Phone,
     Github, Linkedin, Twitter, ExternalLink,
     Terminal, Server, Box, Layers, Zap,
     ChevronDown
@@ -56,22 +56,22 @@ export default function Welcome({ auth }) {
             title: "ERP Business Suite",
             description: "A comprehensive ERP system built with Laravel + MySql + Bootstrap. Manages inventory, sales, and employee payroll with real-time analytics.",
             tags: ["Laravel", "MySQL", "Bootstrap"],
-            github: "#",
-            live: "#"
+            github: "https://github.com/raviduyasodha/Amarasinghe-Tyre",
+            live: "https://ath.sasinna.com/public/"
         },
         {
             title: "Fully Functional Dynamic Website",
             description: "A dynamic website built with Laravel + MySql + Bootstrap. Manages inventory, sales, and employee payroll with real-time analytics.",
             tags: ["Laravel", "MySQL", "Bootstrap"],
-            github: "#",
+            github: "https://github.com/raviduyasodha/apointer1",
             live: "#"
         },
         {
             title: "Moder UI Static Website",
             description: "A static website built with Laravel + React + Tailwind. Manages inventory, sales, and employee payroll with real-time analytics.",
             tags: ["Laravel", "React", "Tailwind"],
-            github: "#",
-            live: "#"
+            github: "https://github.com/raviduyasodha/sasinna-app",
+            live: "https://sasinna.com/"
         }
     ];
 
@@ -103,9 +103,10 @@ export default function Welcome({ auth }) {
                         <motion.div
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            className="text-xl font-black text-slate-100 italic"
+                            className="flex items-center gap-3 text-xl font-black text-slate-100 italic"
                         >
-                            RAVIDU<span className="text-indigo-500 ml-1">Yasodha</span>
+                            <img src="/favicon.png" alt="R" className="size-8 rounded-lg shadow-lg shadow-indigo-500/20 shadow-glow" />
+                            <span>RAVIDU<span className="text-indigo-500 ml-1">Yasodha</span></span>
                         </motion.div>
 
                         <div className="hidden md:flex items-center gap-8">
@@ -275,12 +276,15 @@ export default function Welcome({ auth }) {
                                     <Mail className="size-6 text-indigo-500" />
                                     <span>raviduyasodha9@gmail.com</span>
                                 </a>
+                                <a href="tel:+94774597787" className="flex items-center gap-3 text-lg font-medium hover:text-indigo-400 transition-colors">
+                                    <Phone className="size-6 text-indigo-500" />
+                                    <span>+94 77 459 77 87</span>
+                                </a>
                             </div>
 
                             <div className="flex justify-center gap-8 mb-20 text-slate-500">
-                                <Link href="#" className="hover:text-indigo-400 transition-colors"><Github className="size-7" /></Link>
-                                <Link href="#" className="hover:text-indigo-400 transition-colors"><Linkedin className="size-7" /></Link>
-                                <Link href="#" className="hover:text-indigo-400 transition-colors"><Twitter className="size-7" /></Link>
+                                <a href="https://github.com/raviduyasodha" className="hover:text-indigo-400 transition-colors" target='blank'><Github className="size-7" /></a>
+                                <a href="https://www.linkedin.com/in/ravidu-yasodha-a98857217/" className="hover:text-indigo-400 transition-colors" target='blank'><Linkedin className="size-7" /></a>
                             </div>
 
                             <p className="text-slate-600 text-sm italic">

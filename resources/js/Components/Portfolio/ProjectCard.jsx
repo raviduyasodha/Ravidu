@@ -5,8 +5,8 @@ export default function ProjectCard({ title, description, tags, github, live, im
         <div className="group relative bg-slate-800/40 rounded-2xl border border-slate-700/50 overflow-hidden hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500 hover:-translate-y-2">
             <div className="h-56 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-slate-900/40 group-hover:bg-transparent transition-colors duration-500"></div>
-                <div className="text-slate-500/50 group-hover:text-indigo-400/50 transition-colors duration-500">
-                    <span className="text-4xl font-black opacity-20 group-hover:opacity-40">{title}</span>
+                <div className="text-slate-400/40 group-hover:text-indigo-400/60 transition-colors duration-700">
+                    <span className="text-4xl font-black tracking-tighter">{title}</span>
                 </div>
             </div>
 
